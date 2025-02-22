@@ -11,7 +11,7 @@ const Createnetwork = () => {
      const dispatch = useDispatch()
      const navigate = useNavigate();
      const { coinName,networkId } = useParams();
-     //console.log(coinId)
+     
      const { successMessage, errorMessage, loader} = useSelector(state => state.network);
      const [networkBarcodePreview, setNetworkBarcodePreview] = useState('')
      const [NetworkState, setNetworkState] = useState({
@@ -44,7 +44,7 @@ const Createnetwork = () => {
         if (file) {
             setNetworkBarcodePreview(URL.createObjectURL(file))
             setNetworkState(prev => ({ ...prev, networkBarcode: file }))
-           // console.log(NetworkState)
+          
         }
     }
 
@@ -61,9 +61,6 @@ const Createnetwork = () => {
     
     
         // If you want to see the content of formData
-        for (let pair of formData.entries()) {
-            console.log(pair[0], pair[1]);
-        }
     
         dispatch(create_network({networkId,formData}));
     };
