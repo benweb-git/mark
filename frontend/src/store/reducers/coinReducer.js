@@ -74,7 +74,7 @@ export const get_all_coins = createAsyncThunk(
 export const get_coin = createAsyncThunk(
     'coin/get_coin',
     async(id,{rejectWithValue, fulfillWithValue}) => {
-         console.log(`get coin called?`)
+       
         try { 
             const {data} = await api.get(`/coin/get-coin/${id}`,{withCredentials: true}) 
             // console.log(data)
