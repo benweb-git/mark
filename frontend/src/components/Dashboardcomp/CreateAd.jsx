@@ -29,7 +29,6 @@ const CreateAd = () => {
     
     const checkSubmitData=(e)=>{
         e.preventDefault()
-        console.log(stateInfo)
         dispatch(admin_register(stateInfo))     
        
     }
