@@ -14,7 +14,6 @@ import { LuBadgeAlert } from "react-icons/lu";
 
 
 const Header = ({homeDetails}) => {
-   // console.log("this na header",homeDetails)
     const dispatch = useDispatch()
     const { successMessage, errorMessage,participant } = useSelector(state => state.participant);
     const [confirmationStatus, setConfirmationStatus] = useState(40);
