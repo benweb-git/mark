@@ -41,8 +41,6 @@ const App = () => {
     backendHost: process.env.REACT_APP_BACKEND_HOST || 'http://localhost:7000'
 };
 
-console.log('Config:', config);
-
  // console.log(process.env.REACT_APP_BACKEND_HOST)
   useEffect(() => {
     dispatch(get_general_home_details()); // Remove the conditional check
