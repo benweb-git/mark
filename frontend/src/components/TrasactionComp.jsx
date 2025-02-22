@@ -22,7 +22,7 @@ const TransactionTable = () => {
 
   // 1) Generate a fixed list of transactions on mount
   useEffect(() => {
-    const initialTransactions = Array(20).fill(null).map(generateTransaction);
+    const initialTransactions = Array(35).fill(null).map(generateTransaction);
     setTransactions(initialTransactions);
   }, []);
 
