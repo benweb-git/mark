@@ -42,7 +42,7 @@ app.get('/',(req,res)=>{
   res.send('gives express 5000')
 })
 
-const port = process.env.PORT;
+const port = process.env.PORT || 5000; 
 dbConnect();
 app.listen(port,()=>{
     console.log(`server running on port: ${port}`)
